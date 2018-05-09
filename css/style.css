@@ -1,0 +1,317 @@
+/* Main */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    min-height: 575px;
+    background-image: linear-gradient(to bottom right, rgba(127, 226, 239, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+/* Navigation */
+
+.navigation {
+    padding: 0;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    padding: 35px 30px;
+    display: block;
+    text-align: left;
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 1.5em;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+}
+
+.navigation li:hover {
+    color: #2F4F4F;
+}
+
+/* Logo */
+
+.logo {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}
+
+.logo i,
+.logo h1 {
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+}
+
+.logo h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+/* Order now */
+
+.order-now {
+    position: absolute;
+    right: 90px;
+    top: 330px;
+    color: #3a1aed;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 300px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.order-now h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.order-now i {
+    float: left;
+    font-size: 2em;
+    margin: 25px 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.order-now i:hover {
+    transform: rotate(360deg);
+}
+
+.order-now p {
+    margin: 8px 0;
+    font-size: 1.4em;
+    color: #000;
+}
+
+/* Car */
+
+.car .car-image {
+    background-image: url(../img/car.png);
+    width: 700px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 280px;
+}
+
+.car .car-image .car-item {
+    position: absolute;
+    cursor: pointer;
+}
+
+.car .car-image .car-item1 {
+    top: 110px;
+    left: 105px;
+}
+
+.car .car-image .car-item2 {
+    top: 210px;
+    left: 50px;
+}
+
+.car .car-image .car-item3 {
+    top: 330px;
+    left: 100px;
+}
+
+.car .car-image .car-item i {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    padding: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.car .car-image .car-item:hover i {
+    color: #2F4F4F;
+    border: 2px solid #2F4F4F;
+}
+
+.car .car-image .car-item p {
+    background-color: rgba(47, 79, 79, 0.6);
+    padding: 8px;
+    opacity: 0;
+    transition: 0.4s;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+}
+
+.car .car-image .car-item:hover p {
+    opacity: 1;
+}
+
+/* Page */
+
+.page {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+    min-height: 450px;
+    max-height: 575px;
+    background-color: rgba(47, 79, 79, 0.9);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.page .page-content {
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page .fa-times {
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Order */
+
+#order-page .input-div,
+#order-page .textarea-div {
+    float: left;
+    width: 50%;
+}
+
+#order-page input,
+#order-page textarea {
+    width: 98%;
+    padding: 5px;
+    margin: 5px 1%;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#order-page input {
+    height: 30px;
+}
+
+#order-page textarea {
+    height: 190px;
+}
+
+#order-page button {
+    padding: 7px 20px;
+    background-color: #fff;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: 0.4s;
+    color: #2F4F4F;
+    margin: 15px;
+}
+
+#order-page button:hover {
+    color: #fff;
+    background-color: #2F4F4F;
+    cursor: pointer;
+}
+
+/* Price */
+
+#price-page .page-content table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
+
+#price-page .page-content table td {
+    padding: 10px;
+}
+
+/* About */
+
+#about-page .about-text,
+#about-page .about-img {
+    float: left;
+    width: 50%;
+}
+
+#about-page .about-text {
+    text-align: left;
+    padding: 0 15px;
+}
+
+#about-page .about-text p {
+    margin: 0;
+}
+
+#about-page .about-img {
+    background-image: url(../img/taxi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    border-radius: 4px;
+}
+
+/* Contact */
+
+#contact-page .contact-inner {
+    float: left;
+    width: 33.33%;
+}
+
+#contact-page .contact-inner i {
+    font-size: 2.6em;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#contact-page .contact-inner i:hover {
+    transform: scale(1.2);
+}
+
+#contact-page .contact-inner p,
+#contact-page .contact-inner a,
+#contact-page .contact-inner address {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    margin: 0;
+}
